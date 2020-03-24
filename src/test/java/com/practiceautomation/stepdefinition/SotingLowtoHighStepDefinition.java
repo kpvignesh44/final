@@ -1,7 +1,7 @@
 package com.practiceautomation.stepdefinition;
 
 import com.practiceautomation.pages.LoginPage;
-import com.practiceautomation.pages.SortingHighToLowPage;
+
 import com.practiceautomation.pages.SortingLowToHighPage;
 
 import cucumber.api.java.en.Given;

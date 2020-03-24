@@ -4,11 +4,10 @@ import org.junit.Assert;
 
 import com.practiceautomation.pages.AndroidCategoryPage;
 import com.practiceautomation.pages.BillingDetailsPage;
-import com.practiceautomation.pages.DeleteItemPage;
+
 import com.practiceautomation.pages.FilterAddToBasketPage;
 import com.practiceautomation.pages.FilterFunctionalityPage;
 
-import com.practiceautomation.pages.IncreaseQuantityPage;
 
 import com.practiceautomation.pages.JavaScriptPage;
 import com.practiceautomation.pages.LoginPage;
@@ -28,8 +27,6 @@ public class PlaceOrderStepsDefinition {
 	RegisterPage reg = new RegisterPage();
 	AndroidCategoryPage androidbook = new AndroidCategoryPage();
 	BillingDetailsPage billing = new BillingDetailsPage();
-	DeleteItemPage remove = new DeleteItemPage();
-	IncreaseQuantityPage quantity = new IncreaseQuantityPage();
 	JavaScriptPage js = new JavaScriptPage();
 	PlaceOrderPage placeorder = new PlaceOrderPage();
 	SortingLowToHighPage lowtohigh = new SortingLowToHighPage();

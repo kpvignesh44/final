@@ -2,10 +2,8 @@ package com.practiceautomation.stepdefinition;
 
 import com.practiceautomation.pages.AndroidCategoryPage;
 import com.practiceautomation.pages.BillingDetailsPage;
-import com.practiceautomation.pages.DeleteItemPage;
 import com.practiceautomation.pages.FilterAddToBasketPage;
 import com.practiceautomation.pages.FilterFunctionalityPage;
-import com.practiceautomation.pages.IncreaseQuantityPage;
 import com.practiceautomation.pages.JavaScriptPage;
 import com.practiceautomation.pages.LoginPage;
 import com.practiceautomation.pages.PlaceOrderPage;
@@ -18,15 +16,13 @@ import cucumber.api.java.en.Then;
 
 public class RegisterationStepDefinition {
 	LoginPage login = new LoginPage();
-//	Launch_Chrome l=new Launch_Chrome();
 	RegisterPage reg = new RegisterPage();
 	AndroidCategoryPage androidbook = new AndroidCategoryPage();
 	BillingDetailsPage billing = new BillingDetailsPage();
-	DeleteItemPage remove = new DeleteItemPage();
+	
 	FilterAddToBasketPage filteraddtobasket = new FilterAddToBasketPage();
 	FilterFunctionalityPage filterfunc = new FilterFunctionalityPage();
 	
-	IncreaseQuantityPage quantity = new IncreaseQuantityPage();
 	JavaScriptPage js = new JavaScriptPage();
 	PlaceOrderPage placeorder = new PlaceOrderPage();
 	SortingLowToHighPage lowtohigh = new SortingLowToHighPage();

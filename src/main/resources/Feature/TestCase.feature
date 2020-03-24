@@ -12,9 +12,9 @@ Then Close the browser
 Examples: 
 
 |username	        |password	|
-|vignesh@gmail.com	|9869868	|
-|vicky@gmail.com	|sanjeev	|
-|kpvic@gmail.com	|admin		|
+|vignesh@gmail.com	|9869868@7&	|
+|vicky@gmail.com	|sanjeev!@#$|
+|kpvic@gmail.com	|admin^%$#	|
 
 @TC-02_Login_Functionlity
 Scenario: To check if the user is able to login with valid details
@@ -73,7 +73,17 @@ And Click Login button
 Then Click Shop icon and in Dropdown select the prices from low to high
 Then Close the browser tab
 
-@TC_08_Placing_the_order
+@TC_08_Delete_item_from_cart
+Scenario: To check if the user is able to buy books from HTML category
+Given Launch the chrome browser to open the automation website
+Then opening the Practice automation website on chrome
+Then Enter the Email_id and password in Login
+And Clicking Login Button on automation website
+Then Click Shop icon, Click HTML and buy the book
+Then View the cart and Delete item from cart
+Then Closing the chrome browser tabs
+
+@TC_09_Placing_the_order
 Scenario: To check if the user able to place the order 
 Given Launching a chrome to open website
 Then  opening the Practice automation website in system
@@ -84,76 +94,3 @@ Then View cart, Click proceed to checkout, Enter the billing details and Click p
 And Order status Message
 And Logut the user
 Then Closing the browser tabs
-
-#
-#@TC_07_Adding_books_from_HTML_Category
-#Scenario: To check if the user is able to buy books from HTML category
-#Given Launching the chrome browser in system
-#Then open the Practice automation website
-#Then  Enter the Email and password in Login
-#And Click Login Button
-#Then Click Shop icon, Click HTML and buy the book
-#Then View the cart html book
-#Then Close the browser
-#
-#
-#@TC_08_Adding_books_from_HTML_Category_to_increase_quantity
-#Scenario: To check if the user is able to buy books from HTML category
-#Given Launch the chrome browser in system
-#Then open the Practice automation website
-#Then  Enter the Email and password in Login
-#And Click Login Button
-#Then Click Shop icon, Click HTML and buy the book 
-#Then View the cart, Increase quantity and update
-#Then Close the browser
-#
-
-#
-#@TC_10_Adding_books_from_Selenium_Category
-#Scenario: To check if the user is able to buy books from Selenium category
-#Given Launch the chrome browser in system
-#Then open the Practice automation website
-#Then  Enter the Email and password in Login
-#And Click Login Button
-#Then Click Shop icon, Click Selenium and buy the book
-#Then View the cart selenium book
-#Then Close the browser
-#
-#
-#@TC_11_Delete_item_from_cart
-#Scenario: To check if the user is able to buy books from HTML category
-#Given Launch the chrome browser in system
-#Then open the Practice automation website
-#Then  Enter the Email and password in Login
-#And Click Login Button
-#Then Click Shop icon, Click HTML and buy the book
-#Then View the cart and Delete item from cart
-#Then Close the browser
-#
-#
-
-
-#
-#@TC_13_Filtering_The_Price_from_high_to_low
-#Scenario: To check if the user is able to able to filter the prices from high to low
-#Given Launch the chrome browser in system
-#Then open the Practice automation website
-#Then  Enter the Email and password in Login
-#And Click Login Button
-#Then Click Shop icon and in Dropdown select the prices from high to low
-#Then Close the browser
-#
-#
-#@TC_14_Checking_Mandatory_fields_in_Billing_details
-#Scenario: To check if the mandatory fields are not entered,throws an appropriate error message 
-#Given Launch the chrome browser in system
-#Then open the Practice automation website
-#Then  Enter the Email and password in Login
-#And Click Login Button
-#Then Click Shop button  Click Selenium, buy the book and View cart
-#Then Click proceed to checkout, enter the mandatory details in billing details and click place order
-#Then Take Screenshot if mandatory fields are mising
-#Then Close the browser
-#
-
-#

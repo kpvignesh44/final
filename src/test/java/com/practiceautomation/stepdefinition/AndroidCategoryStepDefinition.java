@@ -6,9 +6,6 @@ import com.practiceautomation.pages.AndroidCategoryPage;
 import com.practiceautomation.pages.BillingDetailsPage;
 import com.practiceautomation.pages.FilterAddToBasketPage;
 import com.practiceautomation.pages.FilterFunctionalityPage;
-
-import com.practiceautomation.pages.IncreaseQuantityPage;
-
 import com.practiceautomation.pages.JavaScriptPage;
 import com.practiceautomation.pages.LoginPage;
 import com.practiceautomation.pages.PlaceOrderPage;

@@ -36,5 +36,7 @@
 	</classpathentry>
 	<classpathentry kind="lib" path="C:/Users/HP/Downloads/extentreports-2.41.2.jar"/>
 	<classpathentry kind="lib" path="C:/Users/HP/Downloads/freemarker-2.3.23.jar"/>
+	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

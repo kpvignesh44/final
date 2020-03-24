@@ -19,7 +19,7 @@
 
 </head>
 
-	<body class='extent standard default hide-overflow bdd-report'>
+	<body class='extent standard default hide-overflow '>
 		<div id='theme-selector' alt='Click to toggle theme. To enable by default, use theme configuration.' title='Click to toggle theme. To enable by default, use theme configuration.'>
 			<span><i class='material-icons'>desktop_windows</i></span>
 		</div>
@@ -46,7 +46,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Mar 24, 2020 04:13:41 PM</span>
+                    <span class='label suite-start-time blue darken-3'>Mar 24, 2020 05:09:04 PM</span>
 				</a>
 			</li>
 			<li>
@@ -71,8 +71,7 @@
 					<i class='material-icons'>warning</i> Status
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
-											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
-					<li class='divider'></li>
+										<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
 			</div>
@@ -85,7 +84,6 @@
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
 					<li><a href='#'>@Practice_Automation</a></li>
-					<li><a href='#'>@TC_08_Delete_item_from_cart</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
 				</ul>
@@ -126,135 +124,49 @@
 
 <div id='test-view-charts' class='subview-full'>
 	<div id='charts-row' class='row nm-v nm-h'>
-		<div class='col s12 m4 l4 np-h'>
+		<div class='col s12 m6 l6 np-h'>
 			<div class='card-panel nm-v'>
-				<div class='left panel-name'>Features</div>
+				<div class='left panel-name'>Tests</div>
 				<div class='chart-box'>
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>1</span> feature(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>1</span> test(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
 		
-		<div class='col s12 m4 l4 np-h'>
-			<div class='card-panel nm-v'>
-				<div class='left panel-name'>Scenarios</div>
-				<div class='chart-box'>
-					<canvas id='child-analysis' width='100' height='80'></canvas>
-				</div>
-				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>1</span> scenario(s) passed</span>
-				</div>
-				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> scenario(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
-				</div>
-			</div>
-		</div>
 		
-		<div class='col s12 m4 l4 np-h'>
-			<div class='card-panel nm-v'>
-				<div class='left panel-name'>Steps</div>
-				<div class='chart-box'>
-					<canvas id='grandchild-analysis' width='100' height='80'></canvas>
-				</div>
-				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>7</span> step(s) passed</span>
-				</div>
-				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
-				</div>
-			</div>
-		</div>
 	</div>
 </div>
 
 	<div class='subview-left left'>
 		
 		<div class='view-summary'>
-			<h5>Features</h5>
+			<h5>Tests</h5>
 			<ul id='test-collection' class='test-collection'>
 				
 				
-				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>Testing the practice automation website</span>
-						<span class='test-time'>Mar 24, 2020 04:13:41 PM</span>
+						<span class='test-time'>Mar 24, 2020 05:09:04 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
-<div class='scenario node' test-id='2' status='pass'>
-	<div class='category-list'>
-		<span class='category label white-text'>@TC_08_Delete_item_from_cart</span>
-	</div>
-	<span class='duration right label'>0h 1m 41s+347ms</span>
-	<div class='desc'>
-		<b>Scenario</b>
-		<span class="desc-text">To check if the user is able to buy books from HTML category</span>
-	</div>
-	<ul class='steps'>
-		<li test-id='3' class='node given pass' status='pass'>
-			
-			<b>Given</b>
-			
-			<span class="bdd-step-name">Given Launch the chrome browser to open the automation website</span>
-				<div class='pre'>passed</div>
-			
-		</li>
-		<li test-id='4' class='node then pass' status='pass'>
-			
-			<b>Then</b>
-			
-			<span class="bdd-step-name">Then opening the Practice automation website on chrome</span>
-				<div class='pre'>passed</div>
-			
-		</li>
-		<li test-id='5' class='node then pass' status='pass'>
-			
-			<b>Then</b>
-			
-			<span class="bdd-step-name">Then Enter the Email_id and password in Login</span>
-				<div class='pre'>passed</div>
-			
-		</li>
-		<li test-id='6' class='node and pass' status='pass'>
-			
-			<b>And</b>
-			
-			<span class="bdd-step-name">And Clicking Login Button on automation website</span>
-				<div class='pre'>passed</div>
-			
-		</li>
-		<li test-id='7' class='node then pass' status='pass'>
-			
-			<b>Then</b>
-			
-			<span class="bdd-step-name">Then Click Shop icon, Click HTML and buy the book</span>
-				<div class='pre'>passed</div>
-			
-		</li>
-		<li test-id='8' class='node then pass' status='pass'>
-			
-			<b>Then</b>
-			
-			<span class="bdd-step-name">Then View the cart and Delete item from cart</span>
-				<div class='pre'>passed</div>
-			
-		</li>
-		<li test-id='9' class='node then pass' status='pass'>
-			
-			<b>Then</b>
-			
-			<span class="bdd-step-name">Then Closing the chrome browser tabs</span>
-				<div class='pre'>passed</div>
-			
-		</li>
-	</ul>
+<div class='test-time-info'>
+	<span class='label start-time'>Mar 24, 2020 05:09:04 PM</span>
+	<span class='label end-time'>Mar 24, 2020 05:09:04 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
 </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>@Practice_Automation</span>
+			</div>
+	</div>
 					</div>
 				</li>
 			</ul>
@@ -332,42 +244,8 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Mar 24, 2020 04:13:41 PM</td>
+										<td>Mar 24, 2020 05:09:04 PM</td>
 										<td class='linked' test-id='1'>Testing the practice automation website</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>@TC_08_Delete_item_from_cart</span>
-						<span class='category-status right'>
-							<span class='label pass'>1</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 1</span>
-							
-							
-						</div>
-					
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Mar 24, 2020 04:13:41 PM</td>
-										<td class='linked' test-id='2'>Testing the practice automation website.To check if the user is able to buy books from HTML category</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
@@ -395,38 +273,32 @@
 		<div class='row'>
 			<div class='col s2'>
 				<div class='card-panel r'>
-					Features
-					<div class='panel-lead'>1</div>
-				</div>
-			</div>
-			<div class='col s2'>
-				<div class='card-panel r'>
-					Scenarios
+					Tests
 					<div class='panel-lead'>1</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>7</div>
+					<div class='panel-lead'>0</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Mar 24, 2020 04:13:41 PM</div>
+					<div class='panel-lead'>Mar 24, 2020 05:09:04 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Mar 24, 2020 04:15:22 PM</div>
+			 		<div class='panel-lead'>Mar 24, 2020 05:09:04 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>101,465ms</div>
+					<div class='panel-lead'>149ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -439,24 +311,12 @@
 							<th>Value</th>
 						</tr>
 							<tr>
-								<td>Test User</td>
+								<td>user</td>
 								<td>HP</td>
 							</tr>
 							<tr>
-								<td>User Name</td>
-								<td>AJ</td>
-							</tr>
-							<tr>
-								<td>Application Name</td>
-								<td>Test App </td>
-							</tr>
-							<tr>
-								<td>Operating System Type</td>
-								<td>Windows 10</td>
-							</tr>
-							<tr>
-								<td>Environment</td>
-								<td>Production</td>
+								<td>os</td>
+								<td>Mac OSX</td>
 							</tr>
 					</table>
 				</div>
@@ -478,12 +338,6 @@
 							<td>0</td>
 							<td>0</td>
 						</tr>
-						<tr>
-							<td>@TC_08_Delete_item_from_cart</td>
-							<td>1</td>
-							<td>0</td>
-							<td>0</td>
-						</tr>
 					</table>
 				</div>
 			</div>
@@ -496,7 +350,7 @@
 		<h5>TestRunner Logs</h5>
 		
 		<div class='card-panel'>
-				Test Execution Cucumber Report
+				Sample test runner output message
 		</div>
 	</div>
 </div>
@@ -514,7 +368,7 @@
 				skipParent: 0,
 				exceptionsParent: 0,
 				
-				passChild: 1,
+				passChild: 0,
 				failChild: 0,
 				fatalChild: 0,
 				errorChild: 0,
@@ -523,7 +377,7 @@
 				infoChild: 0,
 				exceptionsChild: 0,
 				
-				passGrandChild: 7,
+				passGrandChild: 0,
 				failGrandChild: 0,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,

@@ -1,5 +1,7 @@
 package com.practiceautomation.stepdefinition;
 
+import org.junit.Assert;
+
 import com.practiceautomation.pages.FilterAddToBasketPage;
 import com.practiceautomation.pages.FilterFunctionalityPage;
 import com.practiceautomation.pages.LoginPage;
@@ -38,7 +40,12 @@ public class FilteringAddToBasketPageStepDefinition {
 	@Then("^Click Shop icon Filter price using Slider$")
 	public void click_shop_icon_and_Filter_price_using_Slider() throws InterruptedException 
 	{
-		filterfunc.sliderfunc();
+		filteraddtobasket.sliderFilter();
+		String url1=filteraddtobasket.sliderFilter();
+String expectedurl="http://practice.automationtesting.in/shop/?min_price=394&max_price=500";
+		
+		Assert.assertEquals(expectedurl, url1);
+		
 	}
 	@And("^Add the books to the basket and View the cart$")
 	public void add_the_books_to_the_basket_and_View_the_cart() throws InterruptedException

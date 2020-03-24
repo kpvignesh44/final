@@ -18,12 +18,12 @@ public class RegisterPage extends LoginPage
 	By registerbutton = By.xpath("//*[@id=\"customer_login\"]/div[2]/form/p[3]/input[3]");
      
 	//To enter registration details
-		public void register() throws InterruptedException
+		public void register(String username,String password) throws InterruptedException
 		{
 			Thread.sleep(5000);
-			driver.findElement(registeremail).sendKeys("jsvgfb");
+			driver.findElement(registeremail).sendKeys(username);
 			Thread.sleep(2000);
-			driver.findElement(registerpassword).sendKeys("madhurekhavicky@77");
+			driver.findElement(registerpassword).sendKeys(password);
 		}
 		
 		//To click Register button

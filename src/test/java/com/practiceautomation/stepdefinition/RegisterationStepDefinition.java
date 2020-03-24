@@ -5,17 +5,14 @@ import com.practiceautomation.pages.BillingDetailsPage;
 import com.practiceautomation.pages.DeleteItemPage;
 import com.practiceautomation.pages.FilterAddToBasketPage;
 import com.practiceautomation.pages.FilterFunctionalityPage;
-import com.practiceautomation.pages.HtmlCategoryPage;
 import com.practiceautomation.pages.IncreaseQuantityPage;
-import com.practiceautomation.pages.InvalidLoginPage;
 import com.practiceautomation.pages.JavaScriptPage;
 import com.practiceautomation.pages.LoginPage;
 import com.practiceautomation.pages.PlaceOrderPage;
 import com.practiceautomation.pages.RegisterPage;
-import com.practiceautomation.pages.SeleniumCategoryPage;
-import com.practiceautomation.pages.SortingHighToLowPage;
 import com.practiceautomation.pages.SortingLowToHighPage;
 
+import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 
@@ -23,18 +20,15 @@ public class RegisterationStepDefinition {
 	LoginPage login = new LoginPage();
 //	Launch_Chrome l=new Launch_Chrome();
 	RegisterPage reg = new RegisterPage();
-	InvalidLoginPage invalid = new InvalidLoginPage();
 	AndroidCategoryPage androidbook = new AndroidCategoryPage();
 	BillingDetailsPage billing = new BillingDetailsPage();
 	DeleteItemPage remove = new DeleteItemPage();
 	FilterAddToBasketPage filteraddtobasket = new FilterAddToBasketPage();
 	FilterFunctionalityPage filterfunc = new FilterFunctionalityPage();
-	HtmlCategoryPage html = new HtmlCategoryPage();
+	
 	IncreaseQuantityPage quantity = new IncreaseQuantityPage();
 	JavaScriptPage js = new JavaScriptPage();
 	PlaceOrderPage placeorder = new PlaceOrderPage();
-	SeleniumCategoryPage selenium = new SeleniumCategoryPage();
-	SortingHighToLowPage hightolow = new SortingHighToLowPage();
 	SortingLowToHighPage lowtohigh = new SortingLowToHighPage();
 	
 	@Given("^Launch the chrome browser in system$")
@@ -49,13 +43,13 @@ public class RegisterationStepDefinition {
 	    login.openWebsite();
 	}
 
-	@Then("^Enter the Email and password$")
-	public void enter_the_Email_and_password() throws InterruptedException 
+	@Then("^The user enters \"([^\"]*)\" and \"([^\"]*)\"$")
+	public void enter_the_Email_and_password(String username,String password) throws InterruptedException 
 	{
-	    reg.register();
+	    reg.register(username,password);
 	}
 
-	@Then("^Click the Register button$")
+	@And("^Click the Register button$")
 	public void click_the_Register_button() throws InterruptedException
 	{
 	    reg.clickRegisterButton();

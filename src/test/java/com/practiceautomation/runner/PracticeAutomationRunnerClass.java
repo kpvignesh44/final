@@ -9,7 +9,7 @@ import cucumber.api.junit.Cucumber;
 	(
 		features = "src/main/resources/Feature/TestCase.feature",
 		plugin = {"pretty", "html:reports/cucumber-html-report"},
-         tags = {"@TC_15_Placing_the_order"},
+//         tags = {"@TC-01_Register"},
 		glue = {"com.practiceautomation.stepdefinition"},
 		monochrome = true
 	)

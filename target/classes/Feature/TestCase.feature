@@ -1,20 +1,20 @@
 @Practice_Automation
 Feature: Testing the practice automation website
-#@TC-01_Register
-#Scenario Outline: Automation Website
-#	To check if the user is able to register with valid details
-#Given Launch the chrome browser in system
-#Then open the Practice automation website
-#Then The user enters "<username>" and "<password>"
-#And Click the Register button
-#Then Close the browser
-#
-#Examples: 
-#
-#|username	        |password	|
-#|vignesh@gmail.com	|9869868@7&	|
-#|vicky@gmail.com	|sanjeev!@#$|
-#|kpvic@gmail.com	|admin^%$#	|
+@TC-01_Register
+Scenario Outline: Automation Website
+	To check if the user is able to register with valid details
+Given Launch the chrome browser in system
+Then open the Practice automation website
+Then The user enters "<username>" and "<password>"
+And Click the Register button
+Then Close the browser
+
+Examples: 
+
+|username	        |password	|
+|vignesh@gmail.com	|9869868@7&	|
+|vicky@gmail.com	|sanjeev!@#$|
+|kpvic@gmail.com	|admin^%$#	|
 
 @TC-02_Login_Functionlity
 Scenario: To check if the user is able to login with valid details
